@@ -1,0 +1,13 @@
+//Color
+@function color-btn($key) {
+    @return map-get($color-btn, $key);
+}
+
+@function color-grid($key) {
+    @return map-get($color-grid, $key);
+}
+
+//Font
+@function get-font-weight($key) {
+    @return map-get($font-weight, $key);
+}

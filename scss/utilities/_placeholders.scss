@@ -1,0 +1,14 @@
+%a-style-nav {    
+    @include font($color: $color-text);
+    @include brdr($radius: 6px);
+    @include text($decoration: none);    
+}
+
+%li-style {
+   list-style: none; 
+}
+
+%a-style-link {    
+    @include font($weight: 'bld', $color: $color-secondary);
+    @include text($decoration: none);    
+}

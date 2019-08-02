@@ -1,0 +1,28 @@
+.nav {
+    @extend %li-style;
+    @include font($font, $color-text, 'reg', 1em);
+    @include padn('left', 0);
+
+    a {
+        @extend %a-style-nav;       
+        &:hover {
+            color: $color-white;
+            background-color: $color-primary;
+        }         
+    }
+}
+
+.nav__item {
+    @include mq('sm') {
+        width: 100%;
+        a {
+            @include padn('all', 16px);
+        }
+    }
+}
+
+.card {
+    @include font($font, $color-text, 'reg', 1em);
+    @include text($height: 1.25em);
+    
+}

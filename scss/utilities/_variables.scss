@@ -1,0 +1,44 @@
+//Main Layout Colors
+$color-secondary: #4DDEFF; 
+$color-primary: #59E1C1;
+$color-text: #727272;
+$color-white: #fff;
+//Font
+$font: Verdana, Geneva, sans-serif;
+
+$font-weight: (
+    'ltr': 200,
+    'lgt': 300,
+    'reg': 400,
+    'bld': 700,
+);
+
+//Button Colors
+$color-btn: (
+    'def': #51DDFC,
+    'suc': #63CC82,
+    'err': #E4757A,
+    'wrn': #FD7856,
+    'inf': #927BC1,
+);
+
+
+
+//Grid Colors
+$color-grid: (
+    '3': #DEB2EE,
+    '4': #7EE6FD,
+    '5': #88D9A0,
+    '6': #3FABCA,
+    '7': #EC9FA3,
+    '8': #FD9F85,
+    '12': #80E8D1,
+);
+
+//Breakpoints
+$breakpoints: (
+    'sm': 768px,
+    'med': 769px,
+);
+
+

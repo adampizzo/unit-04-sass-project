@@ -1,0 +1,24 @@
+.card a {
+    display: inline;
+}
+
+.card .headline--primary {    
+    @include text($align: left, $height: 1);
+    @include font($size: 1.5em, $color: $color-primary);    
+    @include margn('left', 4%);
+    max-width: 85%;    
+}
+
+#type .headline--secondary {
+    @include font($weight: 'lgt');
+}
+
+.link { 
+    @extend %a-style-link;
+}
+
+.blockquote {    
+    @include padn('left', 2%);
+    @include font($style: italic);
+    @include brdr('left', 10px, solid, $color-primary, 6px);
+}

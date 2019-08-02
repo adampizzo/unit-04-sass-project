@@ -1,0 +1,14 @@
+.form {
+    @include font($family: $font);
+    @include mq('sm'){
+        @include flex($dir: column);
+    }
+
+    @include mq('med'){
+        @include flex($dir: column);
+    }
+}
+
+#forms .headline--secondary {
+    margin-left: 2%;
+}

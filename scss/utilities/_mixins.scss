@@ -1,0 +1,79 @@
+
+//Border
+@mixin brdr($side: null, $thickness: null, $color: null, $style: null, $radius: null) {
+    @if $side == 'all' {
+      border: $thickness $color $style;
+    }
+    @else {
+      border#{'-'+$side}: $thickness $color $style;
+    }
+    border-radius: $radius;
+}
+
+//Margin
+@mixin margn($side, $amount) {
+  @if $side == 'all' {
+    margin: $amount;
+  }
+  @else {
+    margin#{'-'+$side}: $amount;
+  }
+}
+
+//Padding
+@mixin padn($side, $amount) {
+    @if $side == 'all' {
+      padding: $amount;
+    }
+    @else {
+      padding#{'-'+$side}: $amount;
+    }
+}
+
+//Font
+@mixin font($family: null, $color: null, $weight: null, $size: null, $style: null) {
+    font-family: $family;
+    color: $color;
+    font-weight: get-font-weight($weight);  
+    font-size: $size;
+    font-style: $style;
+}
+
+//Text
+@mixin text($align: null, $decoration: null, $height:null) {
+    text-align: $align;
+    text-decoration: $decoration;
+    line-height: $height;
+}
+
+
+//Flex Creator
+@mixin flex($disp: flex, $dir: null, $wrap: null, $just: null) {
+    display: $disp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+  }
+
+
+// Media Queries
+@mixin mq($break) {
+
+    $value: map-get($breakpoints, $break);
+    $med: map-get($breakpoints, 'med');
+  
+    @if $value == null {
+      @error "'#{$break}' is not a valid breakpoint name.";
+    }
+  
+    @else if $value < $med {
+      @media (max-width: $value) {
+        @content;
+      }
+    }
+    @else {
+      @media (min-width: $value) {
+        @content;
+      }
+    }
+  }
