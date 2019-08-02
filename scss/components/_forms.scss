@@ -9,6 +9,32 @@
     }
 }
 
-#forms .headline--secondary {
-    margin-left: 2%;
+.form .headline--secondary {
+    @include margn('left', 2%);
+    @include padn('bottom', 1em);
+    @include font($color: $color-text);
+}
+
+.form .img--avatar {
+    @extend %img--avatar;
+}
+
+.form__label--hidden {
+    display: none;
+}
+
+.form__input {
+    border: none;
+    @include brdr('bottom', 5px, solid, $color-primary);
+    @include padn('all', 10px);
+    @include margn('all', 15px);
+    @include font($family: $font, $weight: 'bld');
+}
+
+.form__input:focus {
+    outline: none; //Chrome - Remove Blue Line
+}
+
+.form [value="Login"] {
+    color: blue;
 }

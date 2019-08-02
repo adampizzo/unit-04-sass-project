@@ -9,7 +9,7 @@
     max-width: 85%;    
 }
 
-#type .headline--secondary {
+.card .headline--secondary {
     @include font($weight: 'lgt');
 }
 

@@ -12,3 +12,8 @@
     @include font($weight: 'bld', $color: $color-secondary);
     @include text($decoration: none);    
 }
+
+%img--avatar {
+    max-width: 60%;
+    margin: 0 auto;
+}

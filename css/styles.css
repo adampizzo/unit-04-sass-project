@@ -354,6 +354,11 @@ template {
   text-decoration: none;
 }
 
+.form .img--avatar {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -564,8 +569,31 @@ template {
   }
 }
 
-#forms .headline--secondary {
+.form .headline--secondary {
   margin-left: 2%;
+  padding-bottom: 1em;
+  color: #727272;
+}
+
+.form__label--hidden {
+  display: none;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 5px solid #59E1C1;
+  padding: 10px;
+  margin: 15px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 700;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form [value=Login] {
+  color: blue;
 }
 
 .img--logo {
@@ -614,7 +642,7 @@ template {
   max-width: 85%;
 }
 
-#type .headline--secondary {
+.card .headline--secondary {
   font-weight: 300;
 }
 
