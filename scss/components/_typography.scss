@@ -1,12 +1,14 @@
-.card a {
-    display: inline;
-}
+.card {
+    a {
+        display: inline;
+    }
 
-.card .headline--primary {    
-    @include text($align: left, $height: 1);
-    @include font($size: 1.5em, $color: $color-primary);    
-    @include margn('left', 4%);
-    max-width: 85%;    
+    .headline--primary {    
+        @include text($align: left, $height: 1);
+        @include font($size: 1.5em, $color: $color-primary);    
+        @include margn('left', 4%);
+        max-width: 85%;    
+    }
 }
 
 .link { 
@@ -14,7 +16,8 @@
 }
 
 .blockquote {    
-    @include padn('left', 2%);
-    @include font($style: italic);
+    @include padn('left', 20px);
+    @include font($style: italic, $size: 1.25em);
     @include brdr('left', 10px, solid, $color-primary, 6px);
+    @include margn('all', 30px);
 }

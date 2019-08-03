@@ -37,7 +37,28 @@
       // concatenate CSS selector, ie when $i = 1,
       // selector would be .grid__col--1
       &--#{$i} {
+        &.theme__colors {
+          background-color: color-grid('#{$i}');
+          @extend %btn-grid;
+          @include font($color: $color-text);
+          @include mq('med') {
+            &.centered {
+              margin: 0 auto;
+            }                   
+          }   
+        }
+        
+        @if $i == 6 {
+          justify-content: center;
+        }
+        @else {
+          justify-content: space-around;
+        }
 
+        
+        
+        
+        
         // base styles applied to all grid columns 
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
@@ -56,9 +77,13 @@
 
           // make column width a percentage of the column number / total columns
           flex-basis: #{$i / 12 * 100 + "%"} ;
+        
+          
+         
+
         }
       }
-    }
+    }    
   }
 }
 
@@ -68,7 +93,7 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq('med'){
 
       // add grid gutter
       margin-left: 10px;

@@ -1,7 +1,13 @@
+nav[role="navigation"] {
+    @include flex(flex, $just: space-between);
+    width: 100%;
+}
+
 .nav {
     @extend %li-style;
-    @include font($font, $color-text, 'reg', 1em);
+    @include font($font, $color-text, regular, 1em);
     @include padn('left', 0);
+    width: 100%;
 
     a {
         @extend %a-style-nav;       
@@ -10,6 +16,14 @@
             background-color: $color-primary;
         }         
     }
+
+    @include mq('med') {
+        @include flex($disp: flex, $dir: row, $wrap: null, $just: space-around);
+        width: 60%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
 }
 
 .nav__item {
@@ -19,6 +33,7 @@
             @include padn('all', 16px);
         }
     }
+    
 }
 
 .card {

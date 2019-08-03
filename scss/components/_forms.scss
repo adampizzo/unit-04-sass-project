@@ -7,47 +7,54 @@
     @include mq('med'){
         @include flex($dir: column);
     }
-}
 
-.form .headline--secondary {
-   
-}
+    &__label--hidden {
+        display: none;
+    }
 
-.form .img--avatar {
-    @extend %img--avatar;
-}
+    &__input {
+        border: none;
+        @include brdr('bottom', 5px, solid, $color-primary);
+        @include padn('all', 10px);
+        @include margn('all', 15px);
+        @include font($family: $font, $weight: 700);
+        @extend %transition;
+        &:focus {
+            border-bottom-color: $color-secondary;
+        }
+    }
 
-.form__label--hidden {
-    display: none;
-}
+    &__input:focus {
+        outline: none; //Chrome - Remove Blue Line
+    }
 
-.form__input {
-    border: none;
-    @include brdr('bottom', 5px, solid, $color-primary);
-    @include padn('all', 10px);
-    @include margn('all', 15px);
-    @include font($family: $font, $weight: 'bld');
-    @extend %transition;
-    &:focus {
-        border-bottom-color: $color-secondary;
+    .img--avatar {
+        @extend %img--avatar;
+    }
+
+    [value="Login"] {
+        background-color: $color-secondary;
+        border-style: none;
+        @include brdr($radius: 6px);
+        @include padn('all', 12px);
+        @include font($color: white, $weight: 700);
+        @extend %transition;
+        &:hover {
+            
+            background-color: whitesmoke;
+            @include font($color: $color-secondary);
+        }
     }
 }
 
-.form__input:focus {
-    outline: none; //Chrome - Remove Blue Line
-}
 
-.form [value="Login"] {
-    background-color: $color-secondary;
-    border-style: none;
-    @include brdr($radius: 6px);
-    @include padn('all', 15px);
-    @include font($color: white, $weight: 'bld');
-    @extend %transition;
-    &:hover {
-        
-        background-color: whitesmoke;
-        @include font($color: $color-secondary);
-    }
-}
+ 
+
+
+
+
+
+
+
+
 

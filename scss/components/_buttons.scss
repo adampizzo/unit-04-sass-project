@@ -1,0 +1,16 @@
+.btn {
+
+    @each $name, $color in $color-btn {
+        &--#{$name} {
+            background-color: $color;
+            border-style: none;
+            text-transform: uppercase;
+            @include brdr($radius: 6px);
+            padding: 12px 5%;
+            
+            @include margn('bottom', 20px);
+            @include font($family: $font, $size: .7em, $color: $color-white, $weight: bold);
+                        
+        }
+    }
+}

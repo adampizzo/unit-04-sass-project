@@ -3,23 +3,17 @@ $color-secondary: #4DDEFF;
 $color-primary: #59E1C1;
 $color-text: #727272;
 $color-white: #fff;
+$color-gray: #e5e5e5;
 //Font
 $font: Verdana, Geneva, sans-serif;
 
-$font-weight: (
-    'ltr': 200,
-    'lgt': 300,
-    'reg': 400,
-    'bld': 700,
-);
-
 //Button Colors
 $color-btn: (
-    'def': #51DDFC,
-    'suc': #63CC82,
-    'err': #E4757A,
-    'wrn': #FD7856,
-    'inf': #927BC1,
+    'default': #51DDFC,
+    'success': #63CC82,
+    'error': #E4757A,
+    'warning': #FD7856,
+    'info': #927BC1,
 );
 
 

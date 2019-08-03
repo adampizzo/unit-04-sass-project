@@ -34,7 +34,7 @@
 @mixin font($family: null, $color: null, $weight: null, $size: null, $style: null) {
     font-family: $family;
     color: $color;
-    font-weight: get-font-weight($weight);  
+    font-weight: $weight;  
     font-size: $size;
     font-style: $style;
 }
@@ -45,6 +45,7 @@
     text-decoration: $decoration;
     line-height: $height;
 }
+
 
 
 //Flex Creator

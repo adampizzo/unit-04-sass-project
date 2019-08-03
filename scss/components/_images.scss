@@ -2,4 +2,21 @@
     &--logo {
         align-self: center;
     }
+
+    &--frame{
+        @include brdr('all', 1px, solid, $color-gray);
+        @include padn('all', 15px);
+            flex-basis: 80%;
+
+        @include mq('med') {            
+            
+            align-self: center;
+        }
+    }
+
+    &--avatar{
+        @extend %img--avatar;
+    }
+
 }
+
