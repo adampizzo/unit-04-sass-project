@@ -33,6 +33,12 @@ nav[role="navigation"] {
             @include padn('all', 16px);
         }
     }
+
+    @include mq('med') {
+        a {
+            @include padn('all', 12px);
+        }
+    }
     
 }
 

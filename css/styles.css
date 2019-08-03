@@ -843,6 +843,11 @@ nav[role=navigation] {
     padding: 16px;
   }
 }
+@media (min-width: 769px) {
+  .nav__item a {
+    padding: 12px;
+  }
+}
 
 .card {
   font-family: Verdana, Geneva, sans-serif;
