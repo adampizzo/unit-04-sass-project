@@ -10,9 +10,7 @@
 }
 
 .form .headline--secondary {
-    @include margn('left', 2%);
-    @include padn('bottom', 1em);
-    @include font($color: $color-text);
+   
 }
 
 .form .img--avatar {
@@ -29,6 +27,10 @@
     @include padn('all', 10px);
     @include margn('all', 15px);
     @include font($family: $font, $weight: 'bld');
+    @extend %transition;
+    &:focus {
+        border-bottom-color: $color-secondary;
+    }
 }
 
 .form__input:focus {
@@ -36,5 +38,16 @@
 }
 
 .form [value="Login"] {
-    color: blue;
+    background-color: $color-secondary;
+    border-style: none;
+    @include brdr($radius: 6px);
+    @include padn('all', 15px);
+    @include font($color: white, $weight: 'bld');
+    @extend %transition;
+    &:hover {
+        
+        background-color: whitesmoke;
+        @include font($color: $color-secondary);
+    }
 }
+

@@ -9,10 +9,6 @@
     max-width: 85%;    
 }
 
-.card .headline--secondary {
-    @include font($weight: 'lgt');
-}
-
 .link { 
     @extend %a-style-link;
 }

@@ -1,3 +1,37 @@
+.nav a {
+  color: #727272;
+  font-weight: get-font-weight();
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.nav {
+  list-style: none;
+}
+
+.link {
+  color: #4DDEFF;
+  font-weight: get-font-weight("bld");
+  text-decoration: none;
+}
+
+.form .img--avatar {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.form [value=Login], .form__input {
+  transition: 0.5s ease-out;
+}
+
+.headline--secondary {
+  margin-left: 2%;
+  padding-bottom: 1em;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #727272;
+  font-weight: 300;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -337,28 +371,6 @@ template {
   display: none;
 }
 
-.nav a {
-  color: #727272;
-  font-weight: get-font-weight();
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-.nav {
-  list-style: none;
-}
-
-.link {
-  color: #4DDEFF;
-  font-weight: get-font-weight("bld");
-  text-decoration: none;
-}
-
-.form .img--avatar {
-  max-width: 60%;
-  margin: 0 auto;
-}
-
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -569,12 +581,6 @@ template {
   }
 }
 
-.form .headline--secondary {
-  margin-left: 2%;
-  padding-bottom: 1em;
-  color: #727272;
-}
-
 .form__label--hidden {
   display: none;
 }
@@ -587,13 +593,25 @@ template {
   font-family: Verdana, Geneva, sans-serif;
   font-weight: 700;
 }
+.form__input:focus {
+  border-bottom-color: #4DDEFF;
+}
 
 .form__input:focus {
   outline: none;
 }
 
 .form [value=Login] {
-  color: blue;
+  background-color: #4DDEFF;
+  border-style: none;
+  border-radius: 6px;
+  padding: 15px;
+  color: white;
+  font-weight: 700;
+}
+.form [value=Login]:hover {
+  background-color: whitesmoke;
+  color: #4DDEFF;
 }
 
 .img--logo {
@@ -640,10 +658,6 @@ template {
   font-size: 1.5em;
   margin-left: 4%;
   max-width: 85%;
-}
-
-.card .headline--secondary {
-  font-weight: 300;
 }
 
 .blockquote {

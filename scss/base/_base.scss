@@ -1,0 +1,5 @@
+.headline--secondary {
+    @include margn('left', 2%);
+    @include padn('bottom', 1em);
+    @include font($family: $font, $weight: 'lgt', $color: $color-text);
+}
