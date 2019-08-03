@@ -815,7 +815,7 @@ nav[role=navigation] {
 .nav {
   font-family: Verdana, Geneva, sans-serif;
   color: #727272;
-  font-weight: regular;
+  font-weight: normal;
   font-size: 1em;
   padding-left: 0;
   width: 100%;
@@ -852,7 +852,7 @@ nav[role=navigation] {
 .card {
   font-family: Verdana, Geneva, sans-serif;
   color: #727272;
-  font-weight: "reg";
+  font-weight: normal;
   font-size: 1em;
   line-height: 1.25em;
 }

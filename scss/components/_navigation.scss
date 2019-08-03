@@ -5,7 +5,7 @@ nav[role="navigation"] {
 
 .nav {
     @extend %li-style;
-    @include font($font, $color-text, regular, 1em);
+    @include font($font, $color-text, normal, 1em);
     @include padn('left', 0);
     width: 100%;
 
@@ -43,7 +43,7 @@ nav[role="navigation"] {
 }
 
 .card {
-    @include font($font, $color-text, 'reg', 1em);
+    @include font($font, $color-text, normal, 1em);
     @include text($height: 1.25em);
     
 }
