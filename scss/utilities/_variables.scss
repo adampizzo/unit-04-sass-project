@@ -5,7 +5,9 @@ $color-text: #727272;
 $color-white: #fff;
 $color-gray: #e5e5e5;
 //Font
-$font: Verdana, Geneva, sans-serif;
+    //Import
+    @import url('https://fonts.googleapis.com/css?family=Cairo:300,400,700&display=swap');
+$font: 'Cairo', sans-serif;
 
 //Button Colors
 $color-btn: (

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Cairo:300,400,700&display=swap");
 .nav a {
   color: #727272;
   border-radius: 6px;
@@ -373,7 +374,7 @@ template {
 .headline--secondary {
   margin-left: 2%;
   margin-top: 0;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #727272;
   font-weight: lighter;
 }
@@ -400,6 +401,7 @@ template {
   flex-basis: 100%;
 }
 .grid__col--1.theme__colors {
+  font-family: "Cairo", sans-serif;
   color: #727272;
 }
 @media (min-width: 769px) {
@@ -423,6 +425,7 @@ template {
   flex-basis: 100%;
 }
 .grid__col--2.theme__colors {
+  font-family: "Cairo", sans-serif;
   color: #727272;
 }
 @media (min-width: 769px) {
@@ -447,6 +450,7 @@ template {
 }
 .grid__col--3.theme__colors {
   background-color: #DEB2EE;
+  font-family: "Cairo", sans-serif;
   color: #727272;
 }
 @media (min-width: 769px) {
@@ -471,6 +475,7 @@ template {
 }
 .grid__col--4.theme__colors {
   background-color: #7EE6FD;
+  font-family: "Cairo", sans-serif;
   color: #727272;
 }
 @media (min-width: 769px) {
@@ -495,6 +500,7 @@ template {
 }
 .grid__col--5.theme__colors {
   background-color: #88D9A0;
+  font-family: "Cairo", sans-serif;
   color: #727272;
 }
 @media (min-width: 769px) {
@@ -519,6 +525,7 @@ template {
 }
 .grid__col--6.theme__colors {
   background-color: #3FABCA;
+  font-family: "Cairo", sans-serif;
   color: #727272;
 }
 @media (min-width: 769px) {
@@ -543,6 +550,7 @@ template {
 }
 .grid__col--7.theme__colors {
   background-color: #EC9FA3;
+  font-family: "Cairo", sans-serif;
   color: #727272;
 }
 @media (min-width: 769px) {
@@ -567,6 +575,7 @@ template {
 }
 .grid__col--8.theme__colors {
   background-color: #FD9F85;
+  font-family: "Cairo", sans-serif;
   color: #727272;
 }
 @media (min-width: 769px) {
@@ -590,6 +599,7 @@ template {
   flex-basis: 100%;
 }
 .grid__col--9.theme__colors {
+  font-family: "Cairo", sans-serif;
   color: #727272;
 }
 @media (min-width: 769px) {
@@ -613,6 +623,7 @@ template {
   flex-basis: 100%;
 }
 .grid__col--10.theme__colors {
+  font-family: "Cairo", sans-serif;
   color: #727272;
 }
 @media (min-width: 769px) {
@@ -636,6 +647,7 @@ template {
   flex-basis: 100%;
 }
 .grid__col--11.theme__colors {
+  font-family: "Cairo", sans-serif;
   color: #727272;
 }
 @media (min-width: 769px) {
@@ -660,6 +672,7 @@ template {
 }
 .grid__col--12.theme__colors {
   background-color: #80E8D1;
+  font-family: "Cairo", sans-serif;
   color: #727272;
 }
 @media (min-width: 769px) {
@@ -694,7 +707,7 @@ template {
   border-radius: 6px;
   padding: 12px 5%;
   margin-bottom: 20px;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 0.7em;
@@ -706,7 +719,7 @@ template {
   border-radius: 6px;
   padding: 12px 5%;
   margin-bottom: 20px;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 0.7em;
@@ -718,7 +731,7 @@ template {
   border-radius: 6px;
   padding: 12px 5%;
   margin-bottom: 20px;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 0.7em;
@@ -730,7 +743,7 @@ template {
   border-radius: 6px;
   padding: 12px 5%;
   margin-bottom: 20px;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 0.7em;
@@ -742,14 +755,14 @@ template {
   border-radius: 6px;
   padding: 12px 5%;
   margin-bottom: 20px;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 0.7em;
 }
 
 .form {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 @media (max-width: 768px) {
   .form {
@@ -771,7 +784,7 @@ template {
   border-bottom: 5px solid #59E1C1;
   padding: 10px;
   margin: 15px;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 700;
 }
 .form__input:focus {
@@ -813,7 +826,7 @@ nav[role=navigation] {
 }
 
 .nav {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #727272;
   font-weight: normal;
   font-size: 1em;
@@ -850,7 +863,7 @@ nav[role=navigation] {
 }
 
 .card {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #727272;
   font-weight: normal;
   font-size: 1em;
